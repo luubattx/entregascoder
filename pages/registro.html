@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@200&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="shortcut icon" href="./assets/img/Screenshot 2023-05-30 18.49.07.png" type="image/x-icon">
+  <title>Masigu</title>
+
+
+<body class="bg-secondary-subtle">
+  <!-- header + navbar -->
+  <header class="pb-5">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top container-fluid">
+      <div class="container-fluid">
+        <!-- logo -->
+        <a class="navbar-brand text-secondary" href="../index.html">Masigu</a>
+        <!-- menu -->
+        <ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Ofertas</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="#">Celulares</a></li>
+              <li><a class="dropdown-item" href="#">Computadoras</a></li>
+              <li>
+              </li>
+              <li><a class="dropdown-item" href="#">Relojes</a></li>
+              <li><a class="dropdown-item" href="#">Auriculares</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+          <div class="offcanvas-header">
+
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+              <ul class="d-flex justify-content-around align-items-center">
+
+                <li class="nav-item dropdown  d-flex justify-content-around align-items-center">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Mi perfil
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./carrito.html">Carrito</a></li>
+                    <hr class="dropdown-divider">
+                    <li><a class="dropdown-item" href="./favoritos.html">Favoritos</a></li>
+                    <hr class="dropdown-divider">
+                    <li><a class="dropdown-item" href="./pedidos.html">Mis pedidos</a></li>
+                    <hr class="dropdown-divider">
+                    <li><a class="dropdown-item" href="./iniciosesion.html">Ver perfil</a></li>
+                    <hr class="dropdown-divider">
+                    <li><a class="dropdown-item" href="#">Configuración</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <li class="d-flex justify-content-around align-items-center">
+                <a class="nav-link active""
+                                    aria-current=" page" href="./iniciosesion.html">Iniciá sesión</a>
+
+              </li>
+              <li class="d-flex justify-content-around align-items-center">
+                <a class="nav-link active" aria-current="page" href="./registro.html">Registrate</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- fin header -->
+
+  </header>
+
+  <main>
+    <section class="m-5">
+      <div class="img-fluid d-flex justify-content-around align-items-center mt-5">
+        <img src="../assets/nanotechnology.png" alt="...">
+      </div>
+<div class="d-flex justify-content-around">
+  <form action="" class="">
+    <h1 class="text-dark d-flex justify-content-around mb-5 fs-2">Registrate!</h1>
+    <div class="form-floating mb-3 ">
+      <input type="name" class="form-control" id="floatingInput" placeholder="fullname">
+      <label for="floatingInput" class="p-3">Nombre</label>
+    </div>
+    <div class="form-floating mb-3 ">
+      <input type="email" class="form-control" id="floatingInput" placeholder="juanperez@example.com">
+      <label for="floatingInput" class="p-3">E-mail</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword" class="p-3">Contraseña</label>
+    </div>
+    <div class="form-floating mb-3">
+      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+        <option selected>Seleccione su país</option>
+        <option value="1">Arabia</option>
+        <option value="2">Argelia</option>
+        <option value="3">Argentina</option>
+      </select>
+      <label for="floatingSelect" class="ms-2">País</label>
+    </div>
+    <div class="form-floating mb-3">
+      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+        <option selected>Seleccione</option>
+        <option value="1">Buenos Aires</option>
+        <option value="2">CABA</option>
+        <option value="3">Santa Fe</option>
+      </select>
+      <label for="floatingSelect" class="ms-2">Provincia o Estado</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="zipcode" class="form-control d-flex justify-content-around" id="floatingPassword" placeholder="zipcode">
+      <label for="floatingPassword" class="p-3">Código postal</label>
+    </div>
+    <div class="form-floating">
+      <input type="address" class="form-control" id="floatingPassword" placeholder="Address">
+      <label for="floatingPassword" class="p-3">Dirección</label>
+    </div>
+    <div class="col-12">
+      <div class="form-check mt-3">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          <p class="text-dark">He leído y acepto los términos y condiciones</p>
+        </label>
+      </div>
+    </div>
+    <div class="col-12 d-flex justify-content-center mt-5">
+      <button type="submit" class="btn btn-primary">Registrarse</button>
+    </div>
+  </form>
+ 
+</div>
+     
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
