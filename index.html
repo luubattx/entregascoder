@@ -1,12 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/img/Screenshot 2023-05-30 18.49.07.png" type="image/x-icon">
+    <title>Masigu</title>
+
+
+
 </head>
-<body>
-    
+
+<body class="overflow-x-hidden">
+    <!-- header + navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top container-fluid">
+        <div class="container-fluid">
+            <!-- logo -->
+            <a class="navbar-brand text-secondary" href="#">Masigu</a>
+            <!-- menu -->
+            <ul>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Ofertas</a></li>
+                        <hr class="dropdown-divider">
+                        <li><a class="dropdown-item" href="#">Celulares</a></li>
+                        <li><a class="dropdown-item" href="#">Computadoras</a></li>
+                        <li>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Relojes</a></li>
+                        <li><a class="dropdown-item" href="#">Auriculares</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+
+                <div class="offcanvas-header">
+
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                        <ul class="d-flex justify-content-around align-items-center">
+
+                            <li class="nav-item dropdown  d-flex justify-content-around align-items-center">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Mi perfil
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./pages/carrito.html">Carrito</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="./pages/favoritos.html">Favoritos</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="./pages/pedidos.html">Mis pedidos</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="./pages/iniciosesion.html">Ver perfil</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="#">Configuración</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <li class="d-flex justify-content-around align-items-center">
+                            <a class="nav-link active""
+                                aria-current=" page" href="./pages/iniciosesion.html">Iniciá sesión</a>
+
+                        </li>
+                        <li class="d-flex justify-content-around align-items-center">
+                            <a class="nav-link active" aria-current="page" href="./pages/registro.html">Registrate</a>
+                        </li>
+                    </ul>
+                    <!-- searchbar -->
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <!-- searchbar end -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- fin menú-->
+    <!-- fin header -->
+    <main class="row">
+
+
+        <!-- carousel -->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active mt-5">
+                    <img src="./assets/iphone14promax.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item  mt-5">
+                    <img src="./assets/macbookpro.jpg" class="d-block w-100" alt="...">
+                </div class="carousel-item  mt-5">
+                <div class="carousel-item">
+                    <img src="./assets/airpodscarousel.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- fin carousel -->
+
+        <!-- novedades vista sin md-->
+
+        <div class="d-md-none d-lg-block">
+<section>
+            <div class="my-3 py-3 d-flex justify-content-around">
+                <h2 class="display-5 m-5">Novedades</h2>
+            </div>
+        </section>
+        <section>
+            <nav class="d-flex justify-content-around align-items-center me-5 ms-5 mt-5 row">
+                <!-- iphone14 -->
+                <div class="card mb-5 col-lg-4 col-sm-12" style="width: 18rem;">
+                    <img src="./assets/iphone14 (1).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">iPhone 14</h5>
+                        <a href="./pages/iphone14.html" class="btn btn-primary d-flex justify-content-around mb-1">Ver
+                            más</a>
+                        <a href="#" class="btn btn-primary d-flex justify-content-around">Comprar</a>
+                    </div>
+                </div>
+
+                <!-- airpods -->
+                <div class="card mb-5 col-lg-4 col-sm-12" style="width: 18rem;">
+                    <img src="./assets/airpods (1).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Airpods</h5>
+                        <a href="#" class="btn btn-primary d-flex justify-content-around mb-1">Ver más</a>
+                        <a href="#" class="btn btn-primary d-flex justify-content-around">Comprar</a>
+                    </div>
+                </div>
+                <!-- airpods -->
+                <div class="card mb-5 col-lg-4 col-sm-12" style="width: 18rem;">
+                    <!-- airpods -->
+                    <img src="./assets/airpods (1).jpg" class="card-img-top" alt="...">
+                    <div class="card-body h-100">
+                        <h5 class="card-title">Airpods</h5>
+                        <a href="#" class="btn btn-primary d-flex justify-content-around mb-1">Ver más</a>
+                        <a href="#" class="btn btn-primary d-flex justify-content-around">Comprar</a>
+                    </div>
+
+
+        </section>
+
+        </section>
+        <section>
+            <nav class="d-flex justify-content-around align-items-center ms-5 mb-5 me-5 row">
+                <!-- iphone14 -->
+                <div class="card mb-5 col-lg-4 col-sm-12" style="width: 18rem;">
+                    <img src="./assets/iphone14 (1).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">iPhone 14</h5>
+                        <a href="./pages/iphone14.html" class="btn btn-primary d-flex justify-content-around mb-1">Ver
+                            más</a>
+                        <a href="#" class="btn btn-primary d-flex justify-content-around">Comprar</a>
+                    </div>
+                </div>
+
+                <!-- airpods -->
+                <div class="card mb-5 col-lg-4 col-sm-12" style="width: 18rem;">
+                    <img src="./assets/airpods (1).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Airpods</h5>
+                        <a href="#" class="btn btn-primary d-flex justify-content-around mb-1">Ver más</a>
+                        <a href="#" class="btn btn-primary d-flex justify-content-around">Comprar</a>
+                    </div>
+                </div>
+                <!-- airpods -->
+                <div class="card mb-5 col-lg-4 col-sm-12" style="width: 18rem;">
+                    <!-- airpods -->
+                    <img src="./assets/airpods.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Airpods</h5>
+                        <a href="#" class="btn btn-primary d-flex justify-content-around mb-1">Ver más</a>
+                        <a href="#" class="btn btn-primary d-flex justify-content-around">Comprar</a>
+                    </div>
+
+
+        </section>
+        </nav>
+        </div>
+        
+
+        <!-- vista md -->
+        <div class="d-none d-md-block d-lg-none">
+
+            <section>
+                <div class="my-3 py-3 d-flex justify-content-around">
+                    <h2 class="display-5 m-5">Novedades</h2>
+                </div>
+            </section>
+            <section>
+                <nav class="d-flex justify-content-around align-items-center me-5 ms-5 mt-5 row">
+                    <!-- iphone14 -->
+                    <div class="card mb-5 col-lg-4 col-sm-12" style="width: 18rem;">
+                        <img src="./assets/iphone14 (1).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14</h5>
+                            <a href="./pages/iphone14.html"
+                                class="btn btn-primary d-flex justify-content-around mb-1">Ver
+                                más</a>
+                            <a href="#" class="btn btn-primary d-flex justify-content-around">Comprar</a>
+                        </div>
+                    </div>
+
+                    <!-- airpods -->
+                    <div class="card mb-5 col-lg-4 col-sm-12" style="width: 18rem;">
+                        <img src="./assets/airpods (1).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Airpods</h5>
+                            <a href="#" class="btn btn-primary d-flex justify-content-around mb-1">Ver más</a>
+                            <a href="#" class="btn btn-primary d-flex justify-content-around">Comprar</a>
+                        </div>
+                    </div>
+                </nav>
+                <nav class="d-flex justify-content-around align-items-center me-5 ms-5 mt-5 row">
+                    <!-- iphone14 -->
+                    <div class="card mb-5 col-lg-4 col-sm-12" style="width: 18rem;">
+                        <img src="./assets/iphone14 (1).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14</h5>
+                            <a href="./pages/iphone14.html"
+                                class="btn btn-primary d-flex justify-content-around mb-1">Ver
+                                más</a>
+                            <a href="#" class="btn btn-primary d-flex justify-content-around">Comprar</a>
+                        </div>
+                    </div>
+
+                    <!-- airpods -->
+                    <div class="card mb-5 col-lg-4 col-sm-12" style="width: 18rem;">
+                        <img src="./assets/airpods (1).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Airpods</h5>
+                            <a href="#" class="btn btn-primary d-flex justify-content-around mb-1">Ver más</a>
+                            <a href="#" class="btn btn-primary d-flex justify-content-around">Comprar</a>
+                        </div>
+                    </div>
+                </nav>
+                <nav class="d-flex justify-content-around align-items-center me-5 ms-5 mt-5 row">
+                    <!-- iphone14 -->
+                    <div class="card mb-5 col-lg-4 col-sm-12" style="width: 18rem;">
+                        <img src="./assets/iphone14 (1).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14</h5>
+                            <a href="./pages/iphone14.html"
+                                class="btn btn-primary d-flex justify-content-around mb-1">Ver
+                                más</a>
+                            <a href="#" class="btn btn-primary d-flex justify-content-around">Comprar</a>
+                        </div>
+                    </div>
+
+                    <!-- airpods -->
+                    <div class="card mb-5 col-lg-4 col-sm-12" style="width: 18rem;">
+                        <img src="./assets/airpods (1).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Airpods</h5>
+                            <a href="#" class="btn btn-primary d-flex justify-content-around mb-1">Ver más</a>
+                            <a href="#" class="btn btn-primary d-flex justify-content-around">Comprar</a>
+                        </div>
+                    </div>
+                </nav>
+
+
+        </div>
+        </section>
+        </nav>
+        </div>
+    </main>
+
+    <footer class="container-fluid">
+        <div class="row bg-dark row d-flex  align-items-center">
+            <div class="col-lg-8 col-sm-8">
+                <ul class="d-lg-flex justify-content-around align-items-center text-light mt-5 mb-5">
+                    <li>masigu@hotmail.com</li>
+                    <li>011 1111-1111</li>
+                    <li>Avenida siempreviva 123</li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <ul class="d-lg-flex justify-content-around align-items-center text-light mt-5 mb-5">
+                    <li>O comunicate con nosotros por nuestro canal de <a class="text-danger"
+                            href="./pages/atalcliente.html"> atención al
+                            cliente</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
