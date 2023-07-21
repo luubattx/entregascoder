@@ -1,7 +1,15 @@
+@import "./views/utilities/_variables.scss";
+@import "./views/_productos.scss";
+
+
 body{
     background-color: $background-color
 }
 
 a{
     list-style: none;
+}
+
+navbar{
+    background-color: $bg-body-tertiary;
 }
